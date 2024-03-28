@@ -2,6 +2,8 @@ import { FC } from 'react';
 import headerStyles from './header.module.css';
 import Contact from '../contact/contact';
 import Logo from '../logo/logo';
+import HeaderForm from '../header-form/header-form';
+import Link from 'next/link';
 
 const Header: FC = () => {
   return (
@@ -13,7 +15,15 @@ const Header: FC = () => {
         </div>
         <Logo />
         <div className={headerStyles.toolbal}>
-          
+          <HeaderForm />
+          <div className={headerStyles.links}>
+            <Link href="/liked">
+              <img className={headerStyles.icon} src="/images/liked-icon.svg" alt="Иконка сердечка"/>
+            </Link>
+            <Link href="/cart">
+              <img className={headerStyles.icon} src="/images/cart-icon.svg" alt="Иконка корзины"/>
+            </Link>
+          </div>
         </div>
       </div>
     </header>
