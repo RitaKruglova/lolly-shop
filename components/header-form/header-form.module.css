@@ -1,0 +1,38 @@
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background-image: url('/images/search-icon.svg');
+  background-position: center;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  border: none;
+  margin-right: 16px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.input {
+  border: none;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: black;
+  height: 24px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s linear;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.input::placeholder {
+  color: black;
+}

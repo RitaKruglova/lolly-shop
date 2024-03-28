@@ -10,8 +10,10 @@ interface IContactProps {
 const Contact: FC<IContactProps> = ({ iconPath, text, link }) => {
   return (
     <address className={contactStyles.container}>
-      <img className={contactStyles.icon} src={iconPath} alt="Иконка" />
-      <a className={contactStyles.link} href={link} target="_blank">{text}</a>
+      <a className={contactStyles.link} href={link} target="_blank">
+        <img className={contactStyles.icon} src={iconPath} alt="Иконка" />
+        {text}
+      </a>
     </address>
   )
 }

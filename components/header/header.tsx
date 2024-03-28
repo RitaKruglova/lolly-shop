@@ -14,7 +14,7 @@ const Header: FC = () => {
           <Contact iconPath="/images/phone-icon.svg" text="+7(985) 437-83-08" link="tel:+79854378308"/>
         </div>
         <Logo />
-        <div className={headerStyles.toolbal}>
+        <div className={headerStyles.toolbar}>
           <HeaderForm />
           <div className={headerStyles.links}>
             <Link href="/liked">

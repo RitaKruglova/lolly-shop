@@ -3,7 +3,7 @@ import logoStyles from './logo.module.css';
 
 const Logo: FC = () => {
   return (
-    <img className={logoStyles.logo} src="#" alt="Логотип" />
+    <img className={logoStyles.logo} src="/images/logo.svg" alt="Логотип" />
   )
 }
 
